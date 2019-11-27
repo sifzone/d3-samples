@@ -6,6 +6,7 @@ import { TableTemplateComponent } from './table-template/table-template.componen
 import { FormTemplateComponent } from './form-template/form-template.component';
 import { DragDropTemplateComponent } from './drag-drop-template/drag-drop-template.component';
 import { TreeTemplateComponent } from './tree-template/tree-template.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path: 'form', component: FormTemplateComponent},
   {path: 'dragNdrop', component: DragDropTemplateComponent},
   {path: 'tree', component: TreeTemplateComponent},
+  { path: '',   redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

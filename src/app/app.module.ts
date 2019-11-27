@@ -28,6 +28,7 @@ import { DragDropTemplateComponent } from './drag-drop-template/drag-drop-templa
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TreeTemplateComponent } from './tree-template/tree-template.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MatTreeModule } from '@angular/material/tree';
     FormTemplateComponent,
     TableTemplateComponent,
     DragDropTemplateComponent,
-    TreeTemplateComponent
+    TreeTemplateComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
